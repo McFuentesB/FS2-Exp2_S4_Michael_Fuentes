@@ -1,0 +1,20 @@
+<!-- booking-form.component.html -->
+<div class="booking-form">
+    <h2>Formulario de Reserva</h2>
+    <form (submit)="onSubmit($event)">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required />
+  
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" required />
+  
+      <label for="checkin">Fecha de Entrada:</label>
+      <input type="date" id="checkin" required />
+  
+      <label for="checkout">Fecha de Salida:</label>
+      <input type="date" id="checkout" required />
+  
+      <button type="submit">Reservar</button>
+    </form>
+  </div>
+  

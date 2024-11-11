@@ -1,0 +1,110 @@
+/* recover.component.css */
+
+/* Estilo general para la página de recuperación de contraseña */
+.recover-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/* Título principal */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulario de recuperación */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #5c6bc0;
+}
+
+/* Botón de recuperación */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #5c6bc0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3f51b5;
+}
+
+/* Mensaje de estado */
+.message {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: green;
+}
+
+.message.ng-hide {
+  display: none;
+}
+
+.recover-link {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #5c6bc0;
+}
+
+.recover-link a {
+  text-decoration: none;
+  color: #5c6bc0;
+}
+
+.recover-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .recover-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  form label, form input {
+    font-size: 14px;
+  }
+}

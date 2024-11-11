@@ -1,0 +1,47 @@
+/* reservations.component.css */
+
+/* Estilo para la sección de Reservas */
+.reservations {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .reservations h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .reservations ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reservations li {
+    padding: 1rem;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reservations li p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .reservations li strong {
+    color: #5c6bc0;
+  }
+  
+  /* Estilo cuando no hay reservas */
+  .reservations div {
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+  }
+  

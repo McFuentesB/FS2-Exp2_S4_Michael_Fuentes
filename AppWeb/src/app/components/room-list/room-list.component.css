@@ -1,0 +1,16 @@
+.room-list {
+    padding: 20px;
+  }
+  
+  .room-item {
+    margin-bottom: 20px;
+  }
+  
+  .room-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .room-item p {
+    font-size: 1rem;
+  }
+  

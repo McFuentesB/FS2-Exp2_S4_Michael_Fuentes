@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mi App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" [routerLink]="['/register']" routerLinkActive="active">Registrarse</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" [routerLink]="['/recover']" routerLinkActive="active">¿Olvidaste tu contraseña?</a>
+        </li>
+
+        <!-- Nueva sección para la página de reservas -->
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/rooms']" routerLinkActive="active">Reservar Habitación</a>
+        </li>
+
+        <!-- Mostrar Perfil y Logout si el usuario está logueado -->
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" [routerLink]="['/profile']" routerLinkActive="active">Perfil</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" href="#" (click)="onLogout()">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Aquí se cargan los componentes según la ruta -->
+<router-outlet></router-outlet>

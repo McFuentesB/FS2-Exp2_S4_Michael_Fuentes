@@ -1,0 +1,15 @@
+<div class="recover-container">
+  <h2>Recuperar Contraseña</h2>
+  
+  <form (submit)="onRecover($event)">
+    <label for="recoverInput">Usuario o Correo Electrónico:</label>
+    <input type="text" id="recoverInput" placeholder="Ingresa tu usuario o correo" required />
+
+    <button type="submit">Recuperar Contraseña</button>
+  </form>
+
+  <!-- Mostrar el mensaje de manera condicional sin *ngIf -->
+  <div class="message" [hidden]="!showMessage">
+    {{ message }}
+  </div>
+</div>

@@ -1,0 +1,156 @@
+/* home.component.css */
+
+/* Estilo general para la página de perfil */
+.profile-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/* Título principal */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Detalles del usuario */
+.user-details {
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.user-details p {
+  margin: 0.5rem 0;
+}
+
+strong {
+  font-weight: bold;
+  color: #5c6bc0;
+}
+
+/* Botón de Cerrar sesión */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff5f57;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d9534f;
+}
+
+/* Estilo para el botón de "Mis Reservas" */
+.reservations-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #5c6bc0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Espaciado entre los botones */
+}
+
+.reservations-button:hover {
+  background-color: #4f5b8f;
+}
+
+/* Estilo para la alerta si no hay usuario en localStorage */
+.alert {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Sección de Reservas */
+.reservations {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reservations h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.reservations ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reservations li {
+  padding: 1rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservations li p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.reservations li strong {
+  color: #5c6bc0;
+}
+
+/* Estilo cuando no hay reservas */
+.reservations div {
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .user-details {
+    font-size: 14px;
+  }
+
+  .reservations {
+    padding: 1rem;
+  }
+
+  .reservations h3 {
+    font-size: 18px;
+  }
+
+  .reservations li p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,16 @@
+<!-- home.component.html -->
+<div class="profile-container">
+  <h2>Bienvenido, {{ user?.username }}</h2>
+
+  <div class="user-details">
+    <p><strong>Correo electrónico:</strong> {{ user?.email }}</p>
+    <p><strong>Usuario:</strong> {{ user?.username }}</p>
+  </div>
+
+  <button (click)="onLogout()">Cerrar sesión</button>
+
+  <!-- Botón para redirigir a la sección de Mis Reservas -->
+  <button class="reservations-button" (click)="showReservations()">
+    Mis Reservas
+  </button>
+</div>

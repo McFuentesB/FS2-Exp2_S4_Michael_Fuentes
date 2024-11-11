@@ -1,0 +1,15 @@
+<div class="reservations">
+    <h3>Mis Reservas</h3>
+    <ul>
+      <li *ngFor="let reservation of reservations">
+        <p><strong>Nombre:</strong> {{ reservation.name }}</p>
+        <p><strong>Correo:</strong> {{ reservation.email }}</p>
+        <p><strong>Entrada:</strong> {{ reservation.checkin }}</p>
+        <p><strong>Salida:</strong> {{ reservation.checkout }}</p>
+      </li>
+    </ul>
+    <div *ngIf="!reservations.length">
+      <p>No tienes reservas.</p>
+    </div>
+  </div>
+  
